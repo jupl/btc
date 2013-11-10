@@ -15,7 +15,7 @@ var slice = Array.prototype.slice;
  * @return {Promise}        Bluebird promise that resolves when command is
  *                          completed. Errors or aborts will cause rejection.
  */
-exports.execute = function(command, options) {
+exports.execute = (function(command, options) {
   var child;
 
   // Ensure that stdio io is inherited (allows color preservation)
@@ -51,7 +51,7 @@ exports.execute = function(command, options) {
       child.kill();
     }
   });
-};
+});
 
 /**
  * List of available generators from Scaffolt. Each element has the following
@@ -84,19 +84,19 @@ exports.generators = fs.readdirSync('generators').filter(function(generator) {
  * @param  {String} moduleName Name of binary installed locally
  * @return {String}            Absolute path
  */
-exports.localBinCommand = function(moduleName, args) {
+exports.localBinCommand = (function(moduleName, args) {
   var command = exports.resolvePath('node_modules', '.bin', moduleName);
   if(args) {
     command += ' ' + args.compact();
   }
   return command;
-}
+});
 
 /**
  * Return the absolute path like path.resolve, but use the project directory
  * as the starting point.
  * @return {String} Absolute path
  */
-exports.resolvePath = function() {
+exports.resolvePath = (function() {
   return path.resolve.apply(null, [cwd].concat(slice.call(arguments, 0)));
-};
+});
