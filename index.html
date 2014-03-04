@@ -15,7 +15,7 @@
       <h1>BTC Skeletons</h1>
       <h4><a href="/btc/angular">Angular</a></h4>
       <h4>Chaplin</h4>
-      <h4>Cordova</h4>
+      <h4><a href="/btc/cordova">Cordova</a></h4>
       <h4>Ember</h4>
     </div>
   </header>
@@ -47,6 +47,7 @@
     </ol>
     <h1 id="about">About</h1>
     <p>These are set of starter projects to build rich client-side experiences using <a target="_blank" href="http://nodejs.org/">Node.js</a>. These skeletons are aimed at leveraging packages to develop and build, while providing a set of unified tasks and definitions to focus less on configuration and setup.</p>
+
     <h2 id="about-core">Core</h2>
     <p>The following tools are leveraged to provide a unified workflow:</p>
     <ul>
@@ -56,6 +57,7 @@
       <li><a target="_blank" href="https://github.com/paulmillr/scaffolt">Scaffolt</a> to generate files from templates.</li>
       <li><a target="_blank" href="http://browsersync.io/">BrowserSync</a> for synchronized autoreloading across multiple environments.</li>
     </ul>
+
     <h2 id="about-testing">Testing</h2>
     <p>Additional packages can be introduced to cover testing of your JavaScript applications:</p>
     <ul>
@@ -65,8 +67,10 @@
       <li><a target="_blank" href="http://visionmedia.github.io/mocha/">Mocha</a> as the versatile test framework.</li>
       <li><a target="_blank" href="http://chaijs.com/">Chai</a> as the versatile assertion library.</li>
     </ul>
+
     <h2 id="about-cordova">Cordova</h2>
-    <p>Skeleton variants are available to package your web applications to run with access to native components using <a target="_blank" href="https://cordova.apache.org/">Apache Cordova</a>. Visit <a href="">this page</a> for more information about extras that are provided for Cordova.</p>
+    <p>Skeleton variants are available to package your web applications to run with access to native components using <a target="_blank" href="https://cordova.apache.org/">Apache Cordova</a>. Visit <a href="/btc/cordova">this page</a> for more information about extras that are provided for Cordova.</p>
+
     <h2 id="about-serverpack">Serverpack</h2>
     <p>Skeleton variants are available that provide additional packages to build a full stack application, inspired by <a target="_blank" href="http://www.mean.io/">MEAN</a>:</p>
     <ul>
@@ -75,6 +79,7 @@
       <li><a target="_blank" href="http://passportjs.org/">Passport</a> for authentication.</li>
       <li><a target="_blank" href="https://prerender.io/">Prerender</a> to support search crawlers.</li>
     </ul>
+
     <h2 id="about-frameworks">Frameworks</h2>
     <p>The following starter projects are available to download, including Cordova and Serverpack variants. The JavaScript frameworks available include:</p>
     <ul>
@@ -99,6 +104,7 @@
 
     <h1 id="tasks">Tasks</h1>
     <p>You are free to work with the individual packages that these skeletons use. (ex: Brunch, Scaffolt, etc.) However, tasks are provided to simplify your workflow with consistency. These tasks are executed using Jake. ex: <code>jake [task]</code></p>
+
     <h2 id="tasks-packages">Packages</h2>
     <p>These tasks are to handle things that are package-related, such as Bower and NPM.</p>
     <h3><code>bower:clean</code></h3>
@@ -107,6 +113,7 @@
     <p>Download Bower components.</p>
     <h3><code>npm:clean</code></h3>
     <p>Remove downloaded NPM modules. This is useful if you want to reinstall dependencies, such as updates or packages have been corrupted. Remember that after running this task <code>npm install</code> needs to be executed to install dependencies.</p>
+
     <h2 id="tasks-extras">Extras</h2>
     <p>These commands add additional features/items to the project that are not included by default.</p>
     <h3>
@@ -119,6 +126,7 @@
       <div><code>rem normalize</code></div>
     </h3>
     <p>Add/remove <a target="_blank" href="http://necolas.github.io/normalize.css/">normalize.css</a> to ensure a consistent starting point in styling between different browsers.</p>
+
     <h2 id="tasks-generators">Generators</h2>
     <p>Generator commands are available to generate and tear down files from templates given a type and name, eliminating the writing of boilerplate code.</p>
     <h3><code>generate</code> / <code>destroy</code></h3>
@@ -148,6 +156,7 @@
       <div><code>destroy servermodel=[name]</code></div>
     </h3>
     <p>(Serverpack only) Generate/destroy a Mongoose model.</p>
+
     <h2 id="tasks-assembling">Assembling</h2>
     <p>The following tasks are for assembling the application, generating JS/CSS and copy assets. The following modes are provided:</p>
     <ul>
@@ -166,6 +175,7 @@
       <li>By default in <code>dev</code> mode <a href="https://github.com/brunch/auto-reload-brunch">Autoreload Brunch</a> is used to automatically refresh the page on changes.</li>
       <li>If running the task with <code>browsersync=true</code> then BrowserSync is used instead for additional functionality.</li>
     </ul>
+
     <h2 id="tasks-testing">Testing</h2>
     <p>To begin running tests make sure that the task <code>test:install</code> is run first to install required packages.</p>
     <h3><code>test:install</code></h3>
