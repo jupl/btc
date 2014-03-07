@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>BTC Ember</title>
+  <link rel="stylesheet" href="/btc/styles/app.css">
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet" type="text/css">
+</head>
+<body class="pure-g-r ember">
+  <header class="pure-u">
+    <div>
+      <h1>BTC Ember</h1>
+      <iframe src="http://ghbtns.com/github-btn.html?user=jupl&repo=btc-ember&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+      <h4><a href="/btc">Core</a></h4>
+      <h4><a href="/btc/angular">Angular</a></h4>
+      <h4>Chaplin</h4>
+      <h4><a href="/btc/cordova">Cordova</a></h4>
+    </div>
+  </header>
+
+  <section class="pure-u">
+    <h1>Download</h1>
+    <div id="download-links">
+      <a href="https://github.com/jupl/btc-ember/archive/master.zip" class="pure-button">Standard</a>
+      <a href="https://github.com/jupl/btc-ember/archive/cordova.zip" class="pure-button">Cordova</a>
+      <a href="https://github.com/jupl/btc-ember/archive/server.zip" class="pure-button">Serverpack</a>
+    </div>
+
+    <h1>Table of Contents</h1>
+    <ol id="toc">
+      <li>
+        <a href="#about">About</a>
+        <ol type="a">
+          <li><a href="#about-core">Core</a></li>
+          <li><a href="#about-ember">Ember</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#tasks">Tasks</a>
+        <ol type="a">
+          <li><a href="#tasks-extras">Extras</a></li>
+          <li><a href="#tasks-generators">Generators</a></li>
+        </ol>
+      </li>
+    </ol>
+
+    <h1 id="about">About</h1>
+    <p>This is a starter project template to build rich client-side experiences with <a target="_blank" href="http://emberjs.com/">Ember.js</a> using <a target="_blank" href="http://nodejs.org/">Node.js</a>. This skeleton is aimed at leveraging packages to develop and build, while providing a set of unified tasks and definitions to focus less on configuration and setup.</p>
+
+    <h2 id="about-core">Core</h2>
+    <p>This starter project builds on top of core packages and utilities. In addition, there are variants of this project that leverage other tools, such as Cordova or server extras. Visit <a href="/btc">this page</a> for more information on core functionality. Visit <a href="/btc/cordova">this page</a> for more information on Cordova specifics.</p>
+
+    <h2 id="about-ember">Ember</h2>
+    <p>The following additional packages are included:</p>
+    <ul>
+      <li><a target="_blank" href="http://emberjs.org/">Ember.js</a> for the base framework.</li>
+      <li><a target="_blank" href="http://jquery.com/">jQuery</a> as a dependency of Ember.</li>
+      <li><a target="_blank" href="http://handlebarsjs.com/">Handlebars</a> as a dependency of Ember.</li>
+      <li><a target="_blank" href="https://github.com/emberjs/data">Ember Data</a> for managing data models. (optional)</li>
+      <li><a target="_blank" href="http://elving.github.io/swag/">Swag</a> for additional Handlebars helpers. (optional)</li>
+      <li><a target="_blank" href="http://learnboost.github.io/stylus/">Stylus</a> to write better styles that compile to CSS.</li>
+      <li><a target="_blank" href="http://visionmedia.github.io/nib/">Nib</a> to focus less on vendor prefixes when working with Stylus.</li>
+    </ul>
+    <p>Handlebars templates are precompiled when assembling the application. In addition, Ember.js is included in two flavors:</p>
+    <ul>
+      <li>When builiding for a development environment or testing, the full Ember.js is included for debugging.</li>
+      <li>When builiding for a production environment, <code>ember.prod</code> is used.</li>
+    </ul>
+
+    <h1 id="tasks">Tasks</h1>
+    <p>Additional tasks are included for working with Ember.js. Visit <a href="/btc#tasks">this page</a> for more information on tasks.</p>
+
+    <h2 id="tasks-extras">Extras</h2>
+    <p>These commands add additional features/items to the project that are not included by default.</p>
+    <h3>
+      <div><code id="tasks-extras-data">add:data</code></div>
+      <div><code>rem:data</code></div>
+    </h3>
+    <p>Add/remove <a target="_blank" href="https://github.com/emberjs/data">Ember Data</a> to/from the project for an integrated data persistence layer.</p>
+    <h3>
+      <div><code>add:swag</code></div>
+      <div><code>rem:swag</code></div>
+    </h3>
+    <p>Add/remove <a target="_blank" href="http://elving.github.io/swag/">Swag</a> to/from the project to add additional helpers for Handlebars.</p>
+
+    <h2 id="tasks-generators">Generators</h2>
+    <p>These generators are provided to generate components without writing boilerplate code. Unit test files are automatically generated for models, controllers, components, and views.</p>
+    <h3>
+      <div><code>generate model=[name]</code></div>
+      <div><code>destroy model=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://emberjs.com/guides/object-model/classes-and-instances/">Ember class</a> that will be used to represent a model. (visit <a target="_blank" href="http://eviltrout.com/2013/03/23/ember-without-data.html">this page</a> for more information)</p>
+    <h3>
+      <div><code>generate data=[name]</code></div>
+      <div><code>destroy data=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://emberjs.com/guides/models/defining-models/">Ember Data model</a> that will be used to represent a model. <a href="#tasks-extras-data">Ember Data is required.</a></p>
+    <h3>
+      <div><code>generate component=[name]</code></div>
+      <div><code>destroy component=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://emberjs.com/guides/components/defining-a-component/">Ember component</a> and Handlebars template.</p>
+    <h3>
+      <div><code>generate view=[name]</code></div>
+      <div><code>destroy view=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://emberjs.com/guides/views/defining-a-view/">Ember view</a>.</p>
+    <h3>
+      <div><code>generate route=[name]</code></div>
+      <div><code>destroy route=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="hhttp://emberjs.com/guides/routing/defining-your-routes/">Ember route</a>.</p>
+    <h3>
+      <div><code>generate controller=[name]</code></div>
+      <div><code>destroy controller=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://emberjs.com/guides/controllers/">Ember controller</a>.</p>
+    <h3>
+      <div><code>generate objcontroller=[name]</code></div>
+      <div><code>destroy objcontroller=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://emberjs.com/guides/controllers/representing-a-single-model-with-objectcontroller/">Ember object controller</a>.</p>
+    <h3>
+      <div><code>generate arrcontroller=[name]</code></div>
+      <div><code>destroy arrcontroller=[name]</code></div>
+    </h3>
+    <h3>
+      <div><code>generate style=[name]</code></div>
+      <div><code>destroy style=[name]</code></div>
+    </h3>
+    <p>Generate/destroy a Stylus stylesheet file.</p>
+    <h3>
+      <div><code>generate template=[name]</code></div>
+      <div><code>destroy template=[name]</code></div>
+    </h3>
+    <p>Generate/destroy a <a target="_blank" href="http://emberjs.com/guides/templates/handlebars-basics/">Handlebars template</a>. You can specify subdirectories. ex: <code>jake g template=products/index</code></p>
+    <h3>
+      <div><code>generate partial=[name]</code></div>
+      <div><code>destroy partial=[name]</code></div>
+    </h3>
+    <p>Generate/destroy a <a target="_blank" href="http://emberjs.com/guides/templates/rendering-with-helpers/#toc_the-code-partial-code-helper">Handlebars partial template</a>.</p>
+  </section>
+</body>
+</html>
