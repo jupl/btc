@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>BTC Chaplin</title>
+  <link rel="stylesheet" href="/btc/styles/app.css">
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet" type="text/css">
+</head>
+<body class="pure-g-r chaplin">
+  <header class="pure-u">
+    <div>
+      <h1>BTC Chaplin</h1>
+      <iframe src="http://ghbtns.com/github-btn.html?user=jupl&repo=btc-chaplin&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+      <h4><a href="/btc">Core</a></h4>
+      <h4><a href="/btc/angular">Angular</a></h4>
+      <h4><a href="/btc/cordova">Cordova</a></h4>
+      <h4><a href="/btc/ember">Ember</a></h4>
+    </div>
+  </header>
+
+  <section class="pure-u">
+    <h1>Download</h1>
+    <div id="download-links">
+      <a href="https://github.com/jupl/btc-chaplin/archive/master.zip" class="pure-button">Standard</a>
+      <a href="https://github.com/jupl/btc-chaplin/archive/cordova.zip" class="pure-button">Cordova</a>
+      <a href="https://github.com/jupl/btc-chaplin/archive/server.zip" class="pure-button">Serverpack</a>
+    </div>
+
+    <h1>Table of Contents</h1>
+    <ol id="toc">
+      <li>
+        <a href="#about">About</a>
+        <ol type="a">
+          <li><a href="#about-core">Core</a></li>
+          <li><a href="#about-chaplin">Chaplin</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#tasks">Tasks</a>
+        <ol type="a">
+          <li><a href="#tasks-extras">Extras</a></li>
+          <li><a href="#tasks-generators">Generators</a></li>
+        </ol>
+      </li>
+    </ol>
+
+    <h1 id="about">About</h1>
+    <p>This is a starter project template to build rich client-side experiences with <a target="_blank" href="http://chaplinjs.org/">Chaplin</a> and <a target="_blank" href="http://coffeescript.org/">CoffeeScript</a> using <a target="_blank" href="http://nodejs.org/">Node.js</a>. This skeleton is aimed at leveraging packages to develop and build, while providing a set of unified tasks and definitions to focus less on configuration and setup.</p>
+
+    <h2 id="about-core">Core</h2>
+    <p>This starter project builds on top of core packages and utilities. In addition, there are variants of this project that leverage other tools, such as Cordova or server extras. Visit <a href="/btc">this page</a> for more information on core functionality. Visit <a href="/btc/cordova">this page</a> for more information on Cordova specifics.</p>
+
+    <h2 id="about-chaplin">Chaplin</h2>
+    <p>The following additional packages are included:</p>
+    <ul>
+      <li><a target="_blank" href="http://coffeescript.org/">CoffeeScript</a> as the primary language.</li>
+      <li><a target="_blank" href="http://chaplinjs.org/">Chaplin</a> for the base framework.</li>
+      <li><a target="_blank" href="http://backbonejs.org/">Backbone.js</a> for the library Chaplin builds on top of.</li>
+      <li><a target="_blank" href="http://jquery.com/">jQuery</a> as a dependency of Backbone.</li>
+      <li><a target="_blank" href="http://lodash.com/">Lo-Dash</a> as a dependency of Backbone.</li>
+      <li><a target="_blank" href="http://exosjs.com/">Exoskeleton</a> as a replacement for Backbone, jQuery, and Lo-Dash. (optional)</li>
+      <li><a target="_blank" href="http://www.rivetsjs.com/">Rivets.js</a> for data binding. (optional)</li>
+      <li><a target="_blank" href="https://github.com/lvivski/davy">Davy</a> for promises with Exoskeleton. (optional)</li>
+      <li><a target="_blank" href="https://github.com/sstephenson/eco">ECO</a> for templating Chaplin views with CoffeeScript.</li>
+      <li><a target="_blank" href="http://lesscss.org/">LESS</a> to write better styles that compile to CSS.</li>
+      <li><a target="_blank" href="http://lesshat.madebysource.com/">LESS Hat</a> for additional mixins for working with LESS.</li>
+    </ul>
+
+    <h1 id="tasks">Tasks</h1>
+    <p>Additional tasks are included for working with Chaplin. Visit <a href="/btc#tasks">this page</a> for more information on tasks.</p>
+
+    <h2 id="tasks-extras">Extras</h2>
+    <p>These commands add additional features/items to the project that are not included by default.</p>
+    <h3>
+      <div><code>add:lodash</code></div>
+      <div><code>rem:lodash</code></div>
+    </h3>
+    <p>Add/remove <a target="_blank" href="http://lodash.com/">Lo-Dash</a> to/from the project for utilities. This is primarily here for <a href="#tasks-extras-exoskeleton">Exoskeleton</a>.</p>
+    <h3>
+      <div><code>add:rivets</code></div>
+      <div><code>rem:rivets</code></div>
+    </h3>
+    <p>Add/remove <a target="_blank" href="http://www.rivetsjs.com/">Rivets</a> to/from the project for data binding.</p>
+    <h3>
+      <div><code id="tasks-extras-exoskeleton">add:exoskeleton</code></div>
+      <div><code>rem:exoskeleton</code></div>
+    </h3>
+    <p>Add/remove <a target="_blank" href="http://exosjs.com/">Exoskeleton</a> to/from the project for a more lean Backbone. Note that this task removes/adds jQuery and Lo-Dash from/to the project.</p>
+    <h3>
+      <div><code>add:davy</code></div>
+      <div><code>rem:davy</code></div>
+    </h3>
+    <p>Add/remove <a target="_blank" href="https://github.com/lvivski/davy">Davy</a> to/from the project for lightweight promises. Use this if you are using Exoskeleton and need promise support.</p>
+
+    <h2 id="tasks-generators">Generators</h2>
+    <p>These generators are provided to generate components without writing boilerplate code. Unit test files are automatically generated for Chaplin components. For Chaplin views, a template and stylesheet is also provided in addition to the source.</p>
+    <h3>
+      <div><code>generate model=[name]</code></div>
+      <div><code>destroy model=[name]</code></div>
+    </h3>
+    <p>Generate/destroy a <a target="_blank" href="http://docs.chaplinjs.org/chaplin.model.html">Chaplin model</a>.</p>
+    <h3>
+      <div><code>generate collection=[name]</code></div>
+      <div><code>destroy collection=[name]</code></div>
+    </h3>
+    <p>Generate/destroy a <a target="_blank" href="http://docs.chaplinjs.org/chaplin.collection.html">Chaplin collection</a>. Generating a Chaplin collection will also generate its corresponding model. Specify the name in singular form, as the collection's name will be automatically pluralized.</p>
+    <h3>
+      <div><code>generate view=[name]</code></div>
+      <div><code>destroy view=[name]</code></div>
+    </h3>
+    <p>Generate/destroy a <a target="_blank" href="http://docs.chaplinjs.org/chaplin.view.html">Chaplin view</a>, ECO template, and LESS stylesheet.</p>
+    <h3>
+      <div><code>generate collectionview=[name]</code></div>
+      <div><code>destroy collectionview=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://docs.chaplinjs.org/chaplin.collection_view.html">Chaplin collection view</a>, ECO template, and LESS stylesheet. Generating a Chaplin collection view will also generate the matching item view.</p>
+    <h3>
+      <div><code>generate controller=[name]</code></div>
+      <div><code>destroy controller=[name]</code></div>
+    </h3>
+    <p>Generate/destroy an <a target="_blank" href="http://docs.chaplinjs.org/chaplin.controller.html">Chaplin controller</a>.</p>
+  </section>
+</body>
+</html>
