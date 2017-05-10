@@ -1,4 +1,6 @@
 # [BTC Base](http://jupl.github.io/btc/) 0.11.1
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jupl/btc.svg)](https://greenkeeper.io/)
 [![Dependency Status](https://gemnasium.com/jupl/btc.png)](https://gemnasium.com/jupl/btc)
 
 This is the base skeleton for the following derived project templates:
