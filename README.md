@@ -70,7 +70,7 @@ A basic push state server serving static assets is included by default. You can 
 - [Karma](http://karma-runner.github.io/)
 - [Selenium WebDriver](https://code.google.com/p/selenium/wiki/WebDriverJs)
 - [PhantomJS](http://phantomjs.org/)
-- [Mocha](http://visionmedia.github.com/mocha/)
+- [Mocha](http://mochajs.org/)
 - [Mocha as Promised](https://github.com/domenic/mocha-as-promised)
 - [Chai](http://chaijs.com/)
 - [Sinon](http://sinonjs.org/)
